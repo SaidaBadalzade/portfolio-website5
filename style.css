@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.main{
+    height:100vh;
+    width:100%;
+    background-color: #a1d1e3;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    width:85%;
+    margin:auto;
+    padding:20px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 35px;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #003250;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#003250;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    color:#f73535;
+}
+.text{
+    margin-left: 7%;
+    margin-top: 12%;
+}
+.text h1{
+    font-size:55px;
+    margin-bottom: 20px;
+    color:#003250;
+    text-transform: capitalize;
+}
+span{
+    color: #f73535;
+}
+.text p{
+    line-height: 30px;
+    color: #003250;
+}
+.text a{
+    text-decoration: none;
+    color:#fff;
+    padding:10px 26px;
+    margin:15px 0;
+    display: inline-block;
+    background-color: #f73535;
+    border:2px solid #f73535;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.text a:hover{
+    color:#003250;
+    background-color: transparent;
+    border:2px solid #003250;
+    transition: 0.4s;
+}
+.main-img{
+    width:40%;
+    height:80%;
+    position: absolute;
+    bottom:0;
+    right:100px;
+}
+.main-img img{
+    height:100%;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.main-img img:hover{
+    left:44%;
+    transition: 1s;
+}
+@media only screen and (max-width: 1280px) {
+    .text h1{
+        font-size: 45px;
+    }
+    .main-img img{
+        height:80%;
+    }
+   
+}
+
+@media only screen and (max-width: 786px) {
+    nav{
+        width:100%;
+        justify-content: space-around;
+    }
+    .text{
+        text-align: center;
+    }
+    .main-img{
+        right:23%;
+        transform: translateX(-23%);
+    }
+    .main-img img{
+        height: 60%;
+    }
+}
